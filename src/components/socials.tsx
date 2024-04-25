@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  RiYoutubeFill,
-  RiLinkedinFill,
-  RiGithubFill,
-  RiFacebookFill,
-  RiInstagramFill,
-} from "react-icons/ri";
+import { RiLinkedinFill, RiGithubFill } from "react-icons/ri";
 
 import Link from "next/link";
 
@@ -16,11 +10,11 @@ const icons = [
   //   name: <RiYoutubeFill />,
   // },
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/suraj-patil-5487719a/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/suraj1294",
     name: <RiGithubFill />,
   },
   // {
