@@ -15,27 +15,27 @@ import {
 const infoData: { icon: React.ReactNode; text: string }[] = [
   {
     icon: <User2 size={20} />,
-    text: "Ryan Davis",
+    text: "Suraj Patil",
   },
   {
     icon: <PhoneCall size={20} />,
-    text: "+012 345 6789",
+    text: "+91 9028853305",
   },
   {
     icon: <MailIcon size={20} />,
-    text: "youremail@email.com",
+    text: "suraz.patil@gmail.com",
   },
   {
     icon: <Calendar size={20} />,
-    text: "Born on 10 Mar, 1998",
+    text: "Born on 7 Sep, 1989",
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Master on Computer Science",
+    text: "Master of Technology in Computer Science",
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "321 Blue Avenue, NY, USA",
+    text: "Pune, Maharashtra, India",
   },
 ];
 
