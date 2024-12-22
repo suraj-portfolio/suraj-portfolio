@@ -1,6 +1,4 @@
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
-// components
-import Form from "@/components/form";
 
 const Contact = () => {
   return (
@@ -42,8 +40,6 @@ const Contact = () => {
               <div>+91 9028853305</div>
             </div>
           </div>
-
-          <Form />
         </div>
       </div>
     </section>
