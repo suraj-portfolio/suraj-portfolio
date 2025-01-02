@@ -1,6 +1,11 @@
+"use client";
+import ContactForm from "@/components/contact-form";
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <section>
       <div className="container mx-auto">
@@ -40,6 +45,9 @@ const Contact = () => {
               <div>+91 9028853305</div>
             </div>
           </div>
+          {!isSubmitted && (
+            <ContactForm onSubmitSuccess={() => setIsSubmitted(true)} />
+          )}
         </div>
       </div>
     </section>
