@@ -78,11 +78,11 @@ const Projects = () => {
             title="A Game Store App"
             description="A game store app built with React, Typescript and RAWG api. It allows users to browse games, search for games and view game details"
             keyFeatures={[
-              "🎸 Search for games",
-              "🔈 Filter by Genres and platforms",
-              "🎧 Infinite Scrolling",
-              " 💬 Dark and light theme support",
-              "👨🏼‍💼 game details page",
+              "🔎 Search for games",
+              "🗒️ Filter by Genres and platforms",
+              "✨ Infinite Scrolling",
+              "🌓 Dark and light theme support",
+              "👓 game details page",
             ]}
             techStack={[
               "React",
@@ -96,6 +96,29 @@ const Projects = () => {
             videoUrl="/GameHub%20-%2023%20January%202025.mp4"
             githubUrl="https://github.com/suraj1294/game-store"
             liveUrl="https://raw-games-app.netlify.app"
+            imageUrl="/placeholder.svg?height=720&width=1280"
+          />
+
+          <ProjectDetails
+            title="XORA AI Landing Page"
+            description="A landing page for XORA AI, a company that provides AI solutions for businesses. The landing page is built with React, Tailwind CSS and React Scroll."
+            keyFeatures={[
+              "😯 Beautifully designed landing page",
+              "👏 Smooth Scrolling",
+              "😍 Smooth animations",
+            ]}
+            techStack={[
+              "React",
+              "Typescript",
+              "Chakra UI",
+              "TanStack Query",
+              "RAWG API",
+              "Frame Motion",
+              "zustand",
+            ]}
+            videoUrl="/Xora%20AI%20-%2023%20January%202025.mp4"
+            githubUrl="https://github.com/suraj-portfolio/saas-xora"
+            liveUrl="https://saas-xora.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
           />
         </div>
