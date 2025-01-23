@@ -114,9 +114,13 @@ const Projects = () => {
             title="Nextjs Advanced Authentication"
             description="A nextjs app with advanced authentication features like email verification, forgot password, social login, two-factor authentication, and more. This is built on top of auth.js v5 library."
             keyFeatures={[
-              "😯 Beautifully designed landing page",
-              "👏 Smooth Scrolling",
-              "😍 Smooth animations",
+              "🔐 Next-auth v5 (Auth.js)",
+              "🌐 OAuth Provider (Social login with Google & GitHub)",
+              "🔒 Forgot password functionality",
+              "✉️ Email verification",
+              "🔑 Two-factor authentication",
+              "🛡️ Protect API Routes for admins only",
+              "🔐 Protect Server Actions for admins only",
             ]}
             techStack={[
               "React",
