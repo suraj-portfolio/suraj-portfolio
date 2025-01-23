@@ -38,7 +38,7 @@ const Projects = () => {
               "Clerk",
               "lemonsqueezy",
             ]}
-            videoUrl="/YouCut_20250122_160314081.mp4"
+            videoUrl="https://ik.imagekit.io/rgsrmkbhv/YouCut_20250122_160314081.mp4"
             githubUrl="https://github.com/suraj1294/code-craft"
             liveUrl="https://code-it.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
@@ -68,7 +68,7 @@ const Projects = () => {
               "Shadcn UI",
               "Clerk",
             ]}
-            videoUrl="/YouCut_20250122_155745045.mp4"
+            videoUrl="https://ik.imagekit.io/rgsrmkbhv/YouCut_20250122_155745045.mp4"
             githubUrl="https://github.com/suraj-portfolio/spotify-app"
             liveUrl="https://spotify-app.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
@@ -93,7 +93,7 @@ const Projects = () => {
               "Frame Motion",
               "zustand",
             ]}
-            videoUrl="/GameHub%20-%2023%20January%202025.mp4"
+            videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737622917/GameHub_-_23_January_2025_1_nhjphi.mp4"
             githubUrl="https://github.com/suraj1294/game-store"
             liveUrl="https://raw-games-app.netlify.app"
             imageUrl="/placeholder.svg?height=720&width=1280"
@@ -116,7 +116,7 @@ const Projects = () => {
               "Frame Motion",
               "zustand",
             ]}
-            videoUrl="/Xora%20AI%20-%2023%20January%202025.mp4"
+            videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737622406/Xora_AI_-_23_January_2025_uomnt0.mp4"
             githubUrl="https://github.com/suraj-portfolio/saas-xora"
             liveUrl="https://saas-xora.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
