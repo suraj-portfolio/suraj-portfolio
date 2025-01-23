@@ -11,7 +11,7 @@ export function VideoPlayer({ videoUrl, thumbnailUrl }: VideoPlayerProps) {
   return (
     <IKVideo
       urlEndpoint="https://ik.imagekit.io/rgsrmkbhv"
-      path={videoUrl}
+      src={videoUrl}
       playsInline
       controls
       className="w-full h-full object-cover"
