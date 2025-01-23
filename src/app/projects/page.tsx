@@ -73,6 +73,31 @@ const Projects = () => {
             liveUrl="https://spotify-app.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
           />
+
+          <ProjectDetails
+            title="A Game Store App"
+            description="A game store app built with React, Typescript and RAWG api. It allows users to browse games, search for games and view game details"
+            keyFeatures={[
+              "🎸 Search for games",
+              "🔈 Filter by Genres and platforms",
+              "🎧 Infinite Scrolling",
+              " 💬 Dark and light theme support",
+              "👨🏼‍💼 game details page",
+            ]}
+            techStack={[
+              "React",
+              "Typescript",
+              "Chakra UI",
+              "TanStack Query",
+              "RAWG API",
+              "Frame Motion",
+              "zustand",
+            ]}
+            videoUrl="/GameHub%20-%2023%20January%202025.mp4"
+            githubUrl="https://github.com/suraj1294/game-store"
+            liveUrl="https://raw-games-app.netlify.app"
+            imageUrl="/placeholder.svg?height=720&width=1280"
+          />
         </div>
       </div>
     </section>
