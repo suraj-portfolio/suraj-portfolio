@@ -1,7 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import ProjectCard from "@/components/project-card";
+import React from "react";
 import ProjectDetails from "@/components/project-details";
 
 const Projects = () => {
@@ -98,7 +96,6 @@ const Projects = () => {
             liveUrl="https://raw-games-app.netlify.app"
             imageUrl="/placeholder.svg?height=720&width=1280"
           />
-
           <ProjectDetails
             title="XORA AI Landing Page"
             description="A landing page for XORA AI, a company that provides AI solutions for businesses. The landing page is built with React, Tailwind CSS and React Scroll."
@@ -107,18 +104,32 @@ const Projects = () => {
               "👏 Smooth Scrolling",
               "😍 Smooth animations",
             ]}
-            techStack={[
-              "React",
-              "Typescript",
-              "Chakra UI",
-              "TanStack Query",
-              "RAWG API",
-              "Frame Motion",
-              "zustand",
-            ]}
+            techStack={["React", "Typescript", "Tailwind CSS", "React Scroll"]}
             videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737622406/Xora_AI_-_23_January_2025_uomnt0.mp4"
             githubUrl="https://github.com/suraj-portfolio/saas-xora"
             liveUrl="https://saas-xora.suraj-patil.in"
+            imageUrl="/placeholder.svg?height=720&width=1280"
+          />
+          <ProjectDetails
+            title="Nextjs Advanced Authentication"
+            description="A nextjs app with advanced authentication features like email verification, forgot password, social login, two-factor authentication, and more. This is built on top of auth.js v5 library."
+            keyFeatures={[
+              "😯 Beautifully designed landing page",
+              "👏 Smooth Scrolling",
+              "😍 Smooth animations",
+            ]}
+            techStack={[
+              "React",
+              "Typescript",
+              "Tailwind CSS",
+              "Turso DB",
+              "Auth.js v5",
+              "resend",
+              "drizzle",
+            ]}
+            videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737630538/01._Intro_Demo_b1aydy.mp4"
+            githubUrl="https://github.com/suraj1294/next-auth-advanced"
+            liveUrl="https://auth-v5.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
           />
         </div>
