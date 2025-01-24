@@ -23,9 +23,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body className={outfit.className}>
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
         <Script
           id="hotjaranalytics"
-          src="/theme.js"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -40,13 +46,6 @@ export default function RootLayout({
           `,
           }}
         />
-      </head>
-      <body className={outfit.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
       </body>
     </html>
   );
