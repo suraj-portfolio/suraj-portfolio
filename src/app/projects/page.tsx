@@ -150,7 +150,7 @@ const Projects = () => {
               "👥 Delegate group management to members",
             ]}
             techStack={["Next.js", "Typescript", "Tailwind CSS", "Convex"]}
-            videoUrl="https://cloud.appwrite.io/v1/storage/buckets/6792833b0014ca83267e/files/679372cb000a799fc7cf/view?project=6703910a00075b384da6&project=6703910a00075b384da6"
+            videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737723336/slack-clone.mp4"
             githubUrl="https://github.com/suraj1294/slack-app"
             liveUrl="https://slack.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
@@ -173,12 +173,12 @@ const Projects = () => {
             techStack={[
               "Next.js",
               "Typescript",
-              "Chakra UI",
-              "Framer Motion",
-              "Formspree",
-              "Vercel",
+              "Hono Api",
+              "Appwrite",
+              "Tailwind CSS",
+              "Shadcn UI",
             ]}
-            videoUrl="https://cloud.appwrite.io/v1/storage/buckets/6792833b0014ca83267e/files/67938664000295ba5cdd/view?project=6703910a00075b384da6&project=6703910a00075b384da6"
+            videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737723310/jira-clone_k9naac.mp4"
             githubUrl="https://github.com/suraj1294/task-manager"
             liveUrl="https://task-manager.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
