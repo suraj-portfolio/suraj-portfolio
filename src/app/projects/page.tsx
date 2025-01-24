@@ -123,7 +123,7 @@ const Projects = () => {
               "🔐 Protect Server Actions for admins only",
             ]}
             techStack={[
-              "React",
+              "Next.js",
               "Typescript",
               "Tailwind CSS",
               "Turso DB",
@@ -134,6 +134,53 @@ const Projects = () => {
             videoUrl="https://res.cloudinary.com/dtrmxxici/video/upload/v1737630538/01._Intro_Demo_b1aydy.mp4"
             githubUrl="https://github.com/suraj1294/next-auth-advanced"
             liveUrl="https://auth-v5.suraj-patil.in"
+            imageUrl="/placeholder.svg?height=720&width=1280"
+          />
+
+          <ProjectDetails
+            title="Slack Clone App"
+            description="Full-featured Slack clone app built with Next.js, Convex, and Tailwind CSS. It supports real-time messaging, channels, workspaces and user authentication."
+            keyFeatures={[
+              "🔐 Authentication with NextJS + Convex",
+              "🌐 Realtime communication within workspaces",
+              "🔒 Invite users to workspaces using invite code",
+              "✉️ Replay to threads",
+              "🔑 Create channels and workspaces",
+              "📎 Send Files in messages",
+              "👥 Delegate group management to members",
+            ]}
+            techStack={["Next.js", "Typescript", "Tailwind CSS", "Convex"]}
+            videoUrl="https://cloud.appwrite.io/v1/storage/buckets/6792833b0014ca83267e/files/679372cb000a799fc7cf/view?project=6703910a00075b384da6&project=6703910a00075b384da6"
+            githubUrl="https://github.com/suraj1294/slack-app"
+            liveUrl="https://slack.suraj-patil.in"
+            imageUrl="/placeholder.svg?height=720&width=1280"
+          />
+
+          <ProjectDetails
+            title="Task Manager App"
+            description="A Jira like task manager app built with Next.js, Shadcn UI, and Appwrite. It supports user authentication, project management, task tracking, and more."
+            keyFeatures={[
+              "👥 Manage workspaces",
+              "📝 Create projects and tasks",
+              "🔒 Assign tasks to team members",
+              "🔍 Search tasks",
+              "📊 Track project progress using my task view",
+              "📅 Calendar view for tasks",
+              "📋 Table view for tasks",
+              "🔐 User authentication and Data management with Appwrite",
+              "👥 invite users to workspace",
+            ]}
+            techStack={[
+              "Next.js",
+              "Typescript",
+              "Chakra UI",
+              "Framer Motion",
+              "Formspree",
+              "Vercel",
+            ]}
+            videoUrl="https://cloud.appwrite.io/v1/storage/buckets/6792833b0014ca83267e/files/67938664000295ba5cdd/view?project=6703910a00075b384da6&project=6703910a00075b384da6"
+            githubUrl="https://github.com/suraj1294/task-manager"
+            liveUrl="https://task-manager.suraj-patil.in"
             imageUrl="/placeholder.svg?height=720&width=1280"
           />
         </div>
