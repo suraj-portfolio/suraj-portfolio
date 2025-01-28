@@ -140,7 +140,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/developer.png"
+              imgSrc="https://ik.imagekit.io/rgsrmkbhv/developer.png"
             />
           </div>
           {/* tabs */}
