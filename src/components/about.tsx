@@ -140,7 +140,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="https://ik.imagekit.io/rgsrmkbhv/developer.png"
+              imgSrc="https://myapppublic.s3.us-east-005.backblazeb2.com/portfolio/08-about-blob-studio.png"
             />
           </div>
           {/* tabs */}
@@ -234,7 +234,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -269,7 +269,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -297,7 +297,7 @@ const About = () => {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>

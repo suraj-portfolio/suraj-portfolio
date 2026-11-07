@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const links = [
   { path: "/", name: "home" },
-  { path: "/projects", name: "my projects" },
+  { path: "/work", name: "my work" },
   { path: "/contact", name: "contact" },
 ];
 
@@ -27,7 +27,7 @@ const Nav = ({
             key={index}
             className={`capitalize ${linkStyles}`}
           >
-            {link.path === path && (
+            {(link.path === "/" ? path === "/" : path.startsWith(link.path)) && (
               <motion.span
                 initial={{ y: "-100%" }}
                 animate={{ y: 0 }}

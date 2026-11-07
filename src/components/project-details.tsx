@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Layers } from "lucide-react";
+import { ExternalLink, Layers } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { VideoPlayer } from "@/components/video-player";
 
 interface ProjectDetailsProps {
@@ -113,7 +114,7 @@ export default function ProjectDetails({
                 rel="noopener noreferrer"
                 className="flex items-center"
               >
-                <Github className="mr-2 h-4 w-4" /> View on GitHub
+                <FaGithub className="mr-2 h-4 w-4" /> View on GitHub
               </a>
             </Button>
             <Button asChild>

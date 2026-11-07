@@ -4,8 +4,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
+import SiteChrome from "@/components/site-chrome";
 import Script from "next/script";
-import { icons } from "lucide-react";
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -26,9 +26,13 @@ export default function RootLayout({
       </head>
       <body className={outfit.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
-          <Header />
+          <SiteChrome>
+            <Header />
+          </SiteChrome>
           {children}
-          <Footer />
+          <SiteChrome>
+            <Footer />
+          </SiteChrome>
         </ThemeProvider>
         <Script
           id="hotjaranalytics"

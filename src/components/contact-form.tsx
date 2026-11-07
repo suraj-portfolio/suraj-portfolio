@@ -4,14 +4,8 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { User, MailIcon, ArrowRightIcon, MessageSquare } from "lucide-react";
-import { Account, Client, Databases, ID } from "appwrite";
+import { Account, Client, TablesDB, ID } from "appwrite";
 import { useRef, useState } from "react";
-
-const client = new Client();
-
-client
-  .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_URL!)
-  .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT!);
 
 const ContactForm: React.FC<{ onSubmitSuccess: () => void }> = ({
   onSubmitSuccess,
@@ -20,24 +14,31 @@ const ContactForm: React.FC<{ onSubmitSuccess: () => void }> = ({
     e.preventDefault();
     const formData = new FormData(e.currentTarget!);
 
-    const databases = new Databases(client);
-    const account = new Account(client);
-    const current = await account.get();
+    try {
+      const client = new Client()
+        .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_URL!)
+        .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT!);
+      const tablesDB = new TablesDB(client);
+      const account = new Account(client);
 
-    if (!current) {
-      await account.createAnonymousSession();
+      // account.get() throws when the visitor has no session yet
+      await account.get().catch(() => account.createAnonymousSession());
+
+      await tablesDB.createRow({
+        databaseId: process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
+        tableId: process.env.NEXT_PUBLIC_APPWRITE_TABLE_ID!,
+        rowId: ID.unique(),
+        data: {
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        },
+      });
+    } catch (error) {
+      console.error("Contact form failed", error);
+      alert("Sorry, your message could not be sent. Please email me instead.");
+      return;
     }
-
-    await databases.createDocument(
-      process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
-      process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_ID!,
-      ID.unique(),
-      {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      }
-    );
 
     alert("Message Sent Successfully!");
 
